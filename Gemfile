@@ -5,9 +5,11 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+ruby '2.4.1'
+
 gem 'rails', '~> 5.1.4'
 
-gem 'sqlite3'
+gem 'sass-rails', '~> 5.0'
 
 gem 'puma', '~> 3.7'
 
@@ -20,6 +22,26 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 
 gem 'jbuilder', '~> 2.5'
+
+gem 'jquery-ui-rails'
+
+gem 'paperclip'
+
+gem 'carrierwave', '~> 0.10.0'
+
+gem 'mini_magick', '~> 4.3'
+
+gem 'image_magick'
+
+gem 'bootstrap-sass', ' 3.3.7'
+
+gem 'ransack'
+
+gem 'devise'
+
+gem 'sqlite3'
+
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 group :development, :test do
 
@@ -39,18 +61,8 @@ group :development do
   gem 'spring'
 
   gem 'spring-watcher-listen', '~> 2.0.0'
+
 end
-gem 'carrierwave', '~> 0.10.0'
-
-gem 'mini_magick', '~> 4.3'
-
-gem 'image_magick'
-
-gem 'bootstrap-sass', ' 3.3.7'
-
-gem 'ransack'
-
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 group :production do
   gem 'pg', '~> 0.21.0'
