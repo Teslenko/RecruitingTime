@@ -21,4 +21,8 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+*git init 
+*git add . 
+*git commit -m "first commit" 
+*git remote add origin https://github.com/Teslenko/RecruitingTime 
+*git push -u origin master
