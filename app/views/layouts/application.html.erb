@@ -1,15 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TimeOfRecruiting</title>
+    <!--<title>TimeOfRecruiting</title>-->
+    <title>Ruby on Rails Tutorial Sample App | <%= yield(:title) %></title>
     <%= csrf_meta_tags %>
     <script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= favicon_link_tag 'logo_on_Time.ico' %> <!--тут лежить логотип для страницы для вкладки-->
+
   </head>
 
   <body>
+
+  <header class="navbar navbar-fixed-top navbar-inverse">
+
+    <%= render 'layouts/header' %>
+  </header>
     <%= yield %>
+  <%= render 'layouts/footer' %>
   </body>
 </html>

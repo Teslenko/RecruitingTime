@@ -11,25 +11,6 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name, id: :candidate_name %>
-  </div>
-
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_area :description, id: :candidate_description %>
-  </div>
-
-  <div class="field">
-    <%= form.label :image %>
-    <%= form.text_field :image, id: :candidate_image %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
-
     <div class="actions">
       <br>
       <%= form.label :image, "Avatar"%><br>
@@ -43,5 +24,22 @@
         <% end %>
       </button >
     </div>
+
+
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :candidate_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description, id: :candidate_description %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+
 
 <% end %>

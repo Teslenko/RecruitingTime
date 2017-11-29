@@ -8,6 +8,9 @@ Bundler.require(*Rails.groups)
 
 module TimeOfRecruiting
   class Application < Rails::Application
+    config.app_generators.scaffold_controller :responders_controller
+    config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
+    config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.1
 
