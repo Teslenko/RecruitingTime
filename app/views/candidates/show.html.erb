@@ -1,6 +1,7 @@
+<h1>The Candidate <%= @candidate.name %> </h1>
 <p id="notice"><%= notice %></p>
 
-
+<title>The Candidate<%= @candidate.name %> </title>
 <p>
   <strong>Image:</strong>
   <%= image_tag @candidate.image.thumb.url %>
@@ -15,7 +16,7 @@
   <strong>Description:</strong>
   <%= @candidate.description %>
 </p>
-
+<p>The Candidate <%= @candidate.name %> </p>
 
 <%= link_to 'Edit', edit_candidate_path(@candidate) %> |
 <%= link_to 'Back', candidates_path %>
