@@ -9,6 +9,8 @@ ruby '2.4.1'
 
 gem 'rails', '~> 5.1.4'
 
+gem 'jquery-turbolinks'
+
 gem 'bcrypt','~> 3.1.7'
 
 gem 'sass-rails', '~> 5.0'
@@ -26,6 +28,8 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 
 gem 'jquery-ui-rails'
+
+gem 'jquery-rails', '~> 4.1', '>= 4.1.1'
 
 gem 'paperclip'
 

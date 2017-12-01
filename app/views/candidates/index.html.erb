@@ -1,8 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
 <p id="notice"><%= notice %></p>
 
 <!--<h1>Candidates</h1>-->
 <h1>Candidates</h1>
 
+<!--##############################---New Candidate--#############################################-->
+
+<br>
+<div style="padding-left: 10px">
+<%= link_to 'New Candidate', new_candidate_path %>
+</div>
+<br>
 <table class="table  table-striped fixedtable" >
   <thead>
     <tr>
@@ -29,5 +42,6 @@
 </table>
 
 <br>
-
-<%= link_to 'New Candidate', new_candidate_path %>
+<br>
+</body>
+</html>

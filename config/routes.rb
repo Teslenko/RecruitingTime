@@ -5,9 +5,11 @@ Rails.application.routes.draw do
   get '/contact'=> 'static_pages#contact'
   get '/about' => 'static_pages#about'
 
+  get :search, controller: :candidates
+  get :autocomplete, controller: :candidates
 
   resources :candidates
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+
   root  'candidates#index'
 
 end

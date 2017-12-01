@@ -1,6 +1,6 @@
 class CandidatesController < ApplicationController
-  before_action :set_candidate, only: [:show, :edit, :update, :destroy]
-
+  before_action :set_candidate, only: [:show,  :edit, :update, :destroy]
+  # before_action :force_json, only: :search
   # GET /candidates
   # GET /candidates.json
   def index
@@ -21,6 +21,27 @@ class CandidatesController < ApplicationController
   # GET /candidates/1/edit
   def edit
   end
+
+  ######################################################################
+  def search
+   @candidates = Candidate.ransack(name_cont: params[:q]).result(distinct: true).limit(2)
+
+    respond_to do |format|
+      format.html{}
+      format.json{}
+    end
+  end
+  ######################################################################
+  def autocomplete
+
+    @candidates = Candidate.ransack(name_cont: params[:q]).result(distinct: true).limit(5)
+
+    respond_to do |format|
+      format.html{}
+      format.json {}
+    end
+  end
+  ######################################################################
 
   # POST /candidates
   # POST /candidates.json
