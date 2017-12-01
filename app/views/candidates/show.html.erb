@@ -18,5 +18,9 @@
 </p>
 <p>The Candidate <%= @candidate.name %> </p>
 
+<p>
+  <%= link_to 'Delete Candidate', @candidate, method: :delete, data: { confirm: 'Are you sure?' } %>
+</p>
+
 <%= link_to 'Edit', edit_candidate_path(@candidate) %> |
 <%= link_to 'Back', candidates_path %>

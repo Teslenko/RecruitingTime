@@ -28,7 +28,7 @@
   </thead>
 
   <tbody>
-    <% @candidates.each do |candidate| %>
+  <% @candidates.each do |candidate| %>
       <tr>
         <td><%= image_tag candidate.image.thumb.url %></td>
         <td><%= candidate.name %></td>
@@ -37,7 +37,7 @@
         <td><%= link_to 'Edit', edit_candidate_path(candidate) %></td>
         <td><%= link_to 'Destroy', candidate, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
-    <% end %>
+  <% end %>
   </tbody>
 </table>
 

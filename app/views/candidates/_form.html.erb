@@ -41,5 +41,8 @@
     <%= form.submit %>
   </div>
 
+    <p>
+      <%= link_to 'Delete Candidate', @candidate, method: :delete, data: { confirm: 'Are you sure?' } %>
+    </p>
 
 <% end %>

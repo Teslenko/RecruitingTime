@@ -1,6 +1,6 @@
 class CandidatesController < ApplicationController
-  before_action :set_candidate, only: [:show,  :edit, :update, :destroy]
-  # before_action :force_json, only: :search
+  before_action :set_candidate, only: [:show, :edit, :update, :destroy]
+  # before_action :set_candidate, except:  [:show,  :edit,  :search,:autocomplete ]
   # GET /candidates
   # GET /candidates.json
   def index
@@ -11,6 +11,7 @@ class CandidatesController < ApplicationController
   # GET /candidates/1.json
   def show
     @candidates = Candidate.all
+
   end
 
   # GET /candidates/new
