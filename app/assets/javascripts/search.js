@@ -25,6 +25,6 @@ document.addEventListener("turbolinks:load", function(){
             }
         }
     }
-    $input('#theme').easyAutocomplete(options)
+    $input.easyAutocomplete(options)
 }
-
+);
