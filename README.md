@@ -33,7 +33,7 @@ Things you may want to cover:
 
 -------------
 
-*heroku git:remote -a recruitingtime
+*heroku git:remote -a recruitingtimes
 
 *git add .
 
