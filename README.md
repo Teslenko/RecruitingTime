@@ -26,3 +26,8 @@ Things you may want to cover:
 *git commit -m "first commit" 
 *git remote add origin https://github.com/Teslenko/RecruitingTime 
 *git push -u origin master
+
+*heroku git:remote -a recruitingtime
+*git add .
+*git commit -am "make it better"
+*git push heroku master
