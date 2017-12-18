@@ -15,24 +15,27 @@
     <%= link_to 'Show Home Page', candidates_path, class: "btn btn-mini btn-warning", type: "button"%>
   </button>
 <br><br>
+
+
 <% if user_signed_in? %>
 
   <!--Sign Out-->
-  <li class="favth-btn">
+
+    <span>Hello :), <%= current_user.email %></span>
     <%= link_to 'Sign Out(Выход)', destroy_user_session_path, method: :delete, class: "btn btn-mini btn-warning", type: "button"%>
-  </li>
+
 
   <% else %>
   <!--Login-->
-  <button style="background-position:center; position: center", class="favth-btn">
+  <!--<button style="background-position:center; position: center", class="favth-btn">-->
     <%= link_to 'Login(Вход)', new_user_session_path, class: "btn btn-mini btn-warning", type: "button"%>
-  </button>
+  <!--</button>-->
 
   <br><br>
   <!--Sign Up-->
-  <button style="background-position:center; position: center", class="favth-btn">
+  <!--<button style="background-position:center; position: center", class="favth-btn">-->
     <%= link_to 'Sign Up(Регистрация)', new_user_registration_path, class: "btn btn-mini btn-warning", type: "button"%>
-  </button>
+  <!--</button>-->
 
   <% end %>
 </div>
