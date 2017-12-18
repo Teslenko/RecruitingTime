@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
+
   devise_for :users
+
   get '/home' => 'static_pages#home'
   get '/help' => 'static_pages#help'
   get '/contact'=> 'static_pages#contact'
@@ -11,8 +13,11 @@ Rails.application.routes.draw do
 
   resources :candidates
 
+
   # root  'candidates#index'
   root  'static_pages#home'
+
+  root  'candidates#index'
 
 
 end

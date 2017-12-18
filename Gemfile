@@ -45,8 +45,11 @@ gem 'devise'
 
 
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 2185aa28c8d450d5c04a04751972880190703d0f
 group :development, :test do
   gem 'sqlite3', '1.3.13'
 end
@@ -66,8 +69,11 @@ group :development do
 
   gem 'spring-watcher-listen', '~> 2.0.0'
 
+<<<<<<< HEAD
   gem 'letter_opener'
 
+=======
+>>>>>>> 2185aa28c8d450d5c04a04751972880190703d0f
 end
 
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

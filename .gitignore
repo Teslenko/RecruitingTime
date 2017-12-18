@@ -25,6 +25,7 @@ onas-logo.png
 thumb_onas-logo.png
 To-Be-Hero-subtitle-indonesia.jpg
 thumb_To-Be-Hero-subtitle-indonesia.jpg
+<<<<<<< HEAD
 
 .idea/**/workspace.xml
 .idea/**/tasks.xml
@@ -40,3 +41,5 @@ thumb_To-Be-Hero-subtitle-indonesia.jpg
 .idea/**/uiDesigner.xml
 
 .idea/*
+=======
+>>>>>>> 2185aa28c8d450d5c04a04751972880190703d0f

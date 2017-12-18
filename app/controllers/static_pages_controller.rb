@@ -1,6 +1,9 @@
 class StaticPagesController < ApplicationController
   def home
+
     @candidates = Candidate.all
+
+
   end
 
   def help

@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20171213153343) do
+=======
+ActiveRecord::Schema.define(version: 20171128154745) do
+>>>>>>> 2185aa28c8d450d5c04a04751972880190703d0f
 
   create_table "candidates", force: :cascade do |t|
     t.string "name"
@@ -20,6 +24,7 @@ ActiveRecord::Schema.define(version: 20171213153343) do
     t.datetime "updated_at", null: false
   end
 
+<<<<<<< HEAD
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false
@@ -37,4 +42,6 @@ ActiveRecord::Schema.define(version: 20171213153343) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+=======
+>>>>>>> 2185aa28c8d450d5c04a04751972880190703d0f
 end
