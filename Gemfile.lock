@@ -38,15 +38,12 @@ GEM
       i18n (~> 0.7)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
-<<<<<<< HEAD
+
     addressable (2.5.2)
       public_suffix (>= 2.0.2, < 4.0)
     arel (8.0.0)
     autoprefixer-rails (7.2.3)
-=======
-    arel (8.0.0)
-    autoprefixer-rails (7.1.6)
->>>>>>> 2185aa28c8d450d5c04a04751972880190703d0f
+
       execjs
     bcrypt (3.1.11)
     bindex (0.5.0)
@@ -104,13 +101,11 @@ GEM
     jquery-ui-rails (6.0.1)
       railties (>= 3.2.16)
     json (2.1.0)
-<<<<<<< HEAD
+
     launchy (2.4.3)
       addressable (~> 2.3)
     letter_opener (1.4.1)
-      launchy (~> 2.2)
-=======
->>>>>>> 2185aa28c8d450d5c04a04751972880190703d0f
+
     listen (3.1.5)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
@@ -143,10 +138,9 @@ GEM
     pg (0.21.0)
     polyamorous (1.3.1)
       activerecord (>= 3.0)
-<<<<<<< HEAD
+
     public_suffix (3.0.1)
-=======
->>>>>>> 2185aa28c8d450d5c04a04751972880190703d0f
+
     puma (3.11.0)
     rack (2.0.3)
     rack-test (0.8.2)
@@ -210,11 +204,9 @@ GEM
       rspec-support (~> 3.7.0)
     rspec-support (3.7.0)
     ruby_dep (1.5.0)
-<<<<<<< HEAD
+
     sass (3.5.4)
-=======
-    sass (3.5.3)
->>>>>>> 2185aa28c8d450d5c04a04751972880190703d0f
+
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
@@ -246,11 +238,10 @@ GEM
     turbolinks-source (5.0.3)
     tzinfo (1.2.4)
       thread_safe (~> 0.1)
-<<<<<<< HEAD
+
     uglifier (4.0.2)
-=======
-    uglifier (3.2.0)
->>>>>>> 2185aa28c8d450d5c04a04751972880190703d0f
+
+
       execjs (>= 0.3.0, < 3)
     warden (1.2.7)
       rack (>= 1.0)
@@ -278,10 +269,9 @@ DEPENDENCIES
   jquery-rails (~> 4.1, >= 4.1.1)
   jquery-turbolinks
   jquery-ui-rails
-<<<<<<< HEAD
+
   letter_opener
-=======
->>>>>>> 2185aa28c8d450d5c04a04751972880190703d0f
+
   listen (>= 3.0.5, < 3.2)
   mini_magick (~> 4.3)
   paperclip
@@ -300,11 +290,10 @@ DEPENDENCIES
   uglifier (>= 1.3.0)
   web-console (>= 3.3.0)
 
-<<<<<<< HEAD
+
 RUBY VERSION
    ruby 2.4.1p111
 
-=======
->>>>>>> 2185aa28c8d450d5c04a04751972880190703d0f
+
 BUNDLED WITH
    1.16.0
