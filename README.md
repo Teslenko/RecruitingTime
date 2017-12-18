@@ -40,12 +40,10 @@ Things you may want to cover:
 *git commit -am "make it better"
 
 *git push heroku master
-<<<<<<< HEAD
-=======
 
 --------------------
 
 If you use the command: git fetch --all and git reset --hard origin/master -  it is the enter next command to restore
 
 *git reset --merge ORIG_HEAD*
->>>>>>> 2185aa28c8d450d5c04a04751972880190703d0f
+
