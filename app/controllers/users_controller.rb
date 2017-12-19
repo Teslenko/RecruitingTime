@@ -4,7 +4,7 @@ class UsersController < ApplicationController
   # before_action :set_listing, only: [:show, :edit, :update, :destroy]
 
   before_filter :signed_in_user, only: [:edit, :update]
-  
+
   def index
     # do something
     @users = User.all
