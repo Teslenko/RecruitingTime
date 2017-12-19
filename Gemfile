@@ -45,9 +45,10 @@ gem 'devise'
 
 gem 'launchy'
 
-gem 'letter_opener'
+
 group :development, :test do
   gem 'sqlite3', '1.3.13'
+  gem 'letter_opener'
 end
 
 group :test do
