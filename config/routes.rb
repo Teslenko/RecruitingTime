@@ -14,11 +14,11 @@ Rails.application.routes.draw do
   get :autocomplete, controller: :candidates
 
   get 'persons/profile', as: 'user_root'
-  
+
   resources :candidates
 
   # root  'candidates#index'
-  root  'static_pages#home'
+  # root  'static_pages#home'
 
   root  'candidates#index'
 
