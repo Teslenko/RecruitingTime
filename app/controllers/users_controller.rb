@@ -3,10 +3,11 @@ class UsersController < ApplicationController
   # before_action :authenticate_user!, :except => [:index]
   # before_action :set_listing, only: [:show, :edit, :update, :destroy]
 
-  before_action :signed_in_user, only: [:edit, :update]
-
+  # before_action :signed_in_user, only: [:edit, :update]
+  before_filer :authenticate_user!
+  skip_before_filer :authenticate_user!
   def index
-    # do something
+    @sent_messages = current_user.sent_messages.all
     @users = User.all
   end
 
@@ -15,7 +16,7 @@ class UsersController < ApplicationController
   end
 
   def show
-    # do something
+    @user = User.find(params[:id])
   end
 
   def edit
@@ -29,6 +30,14 @@ class UsersController < ApplicationController
     else
       render "new"
     end
+  end
+
+  def login
+    @user = User.find(params[:id])
+  end
+
+  def register
+    @user = User.find(params[:id])
   end
 
   # def create
