@@ -47,3 +47,7 @@ If you use the command: git fetch --all and git reset --hard origin/master -  it
 
 *git reset --merge ORIG_HEAD*
 
+--------------------
+
+http://aakinshin.net/ru/blog/post/git-log/ - View the Git Logs
+
