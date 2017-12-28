@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   get :search, controller: :candidates
   get :autocomplete, controller: :candidates
 
-<<<<<<< HEAD
+
   # get 'persons/profile', as: 'user_root'
   
   resources :candidates
@@ -22,7 +22,7 @@ Rails.application.routes.draw do
   # root  'candidates#index'
   root  'static_pages#home'
   # root 'home#index'
-=======
+
   get 'persons/profile', as: 'user_root'
 
   resources :candidates
@@ -30,7 +30,7 @@ Rails.application.routes.draw do
   # root  'candidates#index'
   # root  'static_pages#home'
 
->>>>>>> 2ce7bac73601ed4523b5047914c1dc615862d7ac
+
   root  'candidates#index'
 
 

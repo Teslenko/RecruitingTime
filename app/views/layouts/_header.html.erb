@@ -12,6 +12,7 @@
             <%= link_to "Sign in",  new_user_session_path %>
          <% else %>
             <%= current_user.email %>
+
             <%= link_to "Sign out",  destroy_user_session_path, method: :delete, data: { confirm: 'Вы уверены?' } %>
          <% end %>
         </p>
