@@ -42,7 +42,7 @@ gem 'bootstrap-sass', ' 3.3.7'
 
 gem 'ransack'
 
-gem 'devise'
+# gem 'devise'
 
 gem 'launchy'
 

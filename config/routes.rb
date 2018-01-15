@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   get 'persons/profile'
 
-  devise_for :users
+  # devise_for :users
   # devise_for :users, controllers: { sessions: 'users/sessions' }
 
   get '/home' => 'static_pages#home'
@@ -23,7 +23,7 @@ Rails.application.routes.draw do
   root  'static_pages#home'
   # root 'home#index'
 
-  get 'persons/profile', as: 'user_root'
+  # get 'persons/profile', as: 'user_root'
 
   resources :candidates
 

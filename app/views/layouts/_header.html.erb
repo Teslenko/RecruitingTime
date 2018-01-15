@@ -7,14 +7,9 @@
         <p>
          <%= link_to "Home",    home_path %>
          <%= link_to "Help",    help_path %>
-         <% unless user_signed_in? %>
 
-            <%= link_to "Sign in",  new_user_session_path %>
-         <% else %>
-            <%= current_user.email %>
 
-            <%= link_to "Sign out",  destroy_user_session_path, method: :delete, data: { confirm: 'Вы уверены?' } %>
-         <% end %>
+
         </p>
       </nav>
     </div>
