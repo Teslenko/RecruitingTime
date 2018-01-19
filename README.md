@@ -43,6 +43,12 @@ Things you may want to cover:
 
 --------------------
 
+rake db:reset 
+
+rake db:migrate
+
+--------------------
+
 If you use the command: git fetch --all and git reset --hard origin/master -  it is the enter next command to restore
 
 *git reset --merge ORIG_HEAD*
