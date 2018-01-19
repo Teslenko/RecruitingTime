@@ -19,5 +19,6 @@ module TimeOfRecruiting
     # -- all .rb files in that directory are automatically loaded.
     config.time_zone = "Moscow"
     config.i18n.default_locale = :ru
+    config.assets.initialize_on_precompile = false
   end
 end
