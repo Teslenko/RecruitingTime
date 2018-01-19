@@ -1,6 +1,6 @@
 class PersonsController < ApplicationController
 
-  before_filter :authenticate_user!, except => [:show, :index]
+  before_filter :authenticate_user!, exec => [:show, :index]
 
   def index
     # do something
