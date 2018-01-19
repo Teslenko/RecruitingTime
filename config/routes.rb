@@ -3,12 +3,13 @@ Rails.application.routes.draw do
 
   devise_for :admins
   devise_for :users
+  resources :users
+
   get 'persons/profile'
 
   # devise_for :users
   # devise_for :users, controllers: { sessions: 'users/sessions' }
 
-  # root 'home#index'
 
   get '/home' => 'static_pages#home'
   get '/help' => 'static_pages#help'
@@ -18,22 +19,11 @@ Rails.application.routes.draw do
   get :search, controller: :candidates
   get :autocomplete, controller: :candidates
 
-
-  # get 'persons/profile', as: 'user_root'
-  
-  resources :candidates
-
-  # root  'candidates#index'
   root  'static_pages#home'
-  # root 'home#index'
 
   get 'persons/profile', as: 'user_root'
 
   resources :candidates
-
-  # root  'candidates#index'
-  # root  'static_pages#home'
-
 
   root  'candidates#index'
 
