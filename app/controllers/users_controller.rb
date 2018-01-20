@@ -2,7 +2,7 @@ class UsersController < ApplicationController
 
   # before_filter :authenticate_user!, except => [:show, :index]
 
-  before_action :set_user, only: :show
+  before_action :set_user, only: [:show, :edit, :update, :destroy]
 
   def index
 
@@ -14,8 +14,8 @@ class UsersController < ApplicationController
   end
 
   def show
-    @user = User.find(params[:id])
-    debugger
+    # @user = User.find(params[:id])
+    # debugger
   end
 
   def create
@@ -28,7 +28,8 @@ class UsersController < ApplicationController
   end
 
   def set_user
-    @user = User.find(current_user)
+    # @user = User.find(params[:id])
+    @user = User.find_by id: session[:user_id]
   end
   private
 

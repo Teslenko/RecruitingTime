@@ -5,8 +5,9 @@ Rails.application.routes.draw do
   devise_for :users
   resources :users
 
-  get 'persons/profile'
+  # get 'users/profile'
 
+  # get 'users/profile', as: 'user_root'
   # devise_for :users
   # devise_for :users, controllers: { sessions: 'users/sessions' }
 
@@ -21,7 +22,7 @@ Rails.application.routes.draw do
 
   root  'static_pages#home'
 
-  get 'persons/profile', as: 'user_root'
+
 
   resources :candidates
 
