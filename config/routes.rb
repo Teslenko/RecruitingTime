@@ -5,6 +5,12 @@ Rails.application.routes.draw do
   devise_for :users
   resources :users
 
+  resources :sessions, only: [:new, :create, :destroy]
+  root  'static_pages#home'
+  match '/signup',  to: 'users#new',            via: 'get'
+  match '/signin',  to: 'sessions#new',         via: 'get'
+  match '/signout', to: 'sessions#destroy',     via: 'delete'
+
   # get 'users/profile'
 
   # get 'users/profile', as: 'user_root'
@@ -20,7 +26,7 @@ Rails.application.routes.draw do
   get :search, controller: :candidates
   get :autocomplete, controller: :candidates
 
-  root  'static_pages#home'
+  # root  'static_pages#home'
 
 
 
